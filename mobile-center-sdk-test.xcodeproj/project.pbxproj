@@ -12,6 +12,11 @@
 		04787B171E966B1200B3F7EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04787B151E966B1200B3F7EF /* Main.storyboard */; };
 		04787B191E966B1200B3F7EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04787B181E966B1200B3F7EF /* Assets.xcassets */; };
 		04787B1C1E966B1200B3F7EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04787B1A1E966B1200B3F7EF /* LaunchScreen.storyboard */; };
+		04787B331E96766800B3F7EF /* MobileCenterDistributeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04787B2E1E96766700B3F7EF /* MobileCenterDistributeResources.bundle */; };
+		04787B341E96766800B3F7EF /* MobileCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04787B2F1E96766700B3F7EF /* MobileCenter.framework */; };
+		04787B351E96766800B3F7EF /* MobileCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04787B301E96766800B3F7EF /* MobileCenterAnalytics.framework */; };
+		04787B361E96766800B3F7EF /* MobileCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04787B311E96766800B3F7EF /* MobileCenterCrashes.framework */; };
+		04787B371E96766800B3F7EF /* MobileCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04787B321E96766800B3F7EF /* MobileCenterDistribute.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		04787B181E966B1200B3F7EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04787B1B1E966B1200B3F7EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04787B1D1E966B1200B3F7EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04787B2E1E96766700B3F7EF /* MobileCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MobileCenterDistributeResources.bundle; sourceTree = "<group>"; };
+		04787B2F1E96766700B3F7EF /* MobileCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCenter.framework; sourceTree = "<group>"; };
+		04787B301E96766800B3F7EF /* MobileCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCenterAnalytics.framework; sourceTree = "<group>"; };
+		04787B311E96766800B3F7EF /* MobileCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCenterCrashes.framework; sourceTree = "<group>"; };
+		04787B321E96766800B3F7EF /* MobileCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCenterDistribute.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04787B371E96766800B3F7EF /* MobileCenterDistribute.framework in Frameworks */,
+				04787B351E96766800B3F7EF /* MobileCenterAnalytics.framework in Frameworks */,
+				04787B361E96766800B3F7EF /* MobileCenterCrashes.framework in Frameworks */,
+				04787B341E96766800B3F7EF /* MobileCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +52,7 @@
 		04787B051E966B1200B3F7EF = {
 			isa = PBXGroup;
 			children = (
+				04787B231E9674AE00B3F7EF /* Vendor */,
 				04787B101E966B1200B3F7EF /* mobile-center-sdk-test */,
 				04787B0F1E966B1200B3F7EF /* Products */,
 			);
@@ -63,6 +78,18 @@
 			);
 			path = "mobile-center-sdk-test";
 			sourceTree = "<group>";
+		};
+		04787B231E9674AE00B3F7EF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				04787B2E1E96766700B3F7EF /* MobileCenterDistributeResources.bundle */,
+				04787B2F1E96766700B3F7EF /* MobileCenter.framework */,
+				04787B301E96766800B3F7EF /* MobileCenterAnalytics.framework */,
+				04787B311E96766800B3F7EF /* MobileCenterCrashes.framework */,
+				04787B321E96766800B3F7EF /* MobileCenterDistribute.framework */,
+			);
+			path = Vendor;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -124,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04787B1C1E966B1200B3F7EF /* LaunchScreen.storyboard in Resources */,
+				04787B331E96766800B3F7EF /* MobileCenterDistributeResources.bundle in Resources */,
 				04787B191E966B1200B3F7EF /* Assets.xcassets in Resources */,
 				04787B171E966B1200B3F7EF /* Main.storyboard in Resources */,
 			);
@@ -262,6 +290,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Vendor",
+				);
 				INFOPLIST_FILE = "mobile-center-sdk-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "akvelon.mobile-center-sdk-test";
@@ -274,6 +307,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Vendor",
+				);
 				INFOPLIST_FILE = "mobile-center-sdk-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "akvelon.mobile-center-sdk-test";
@@ -301,6 +339,7 @@
 				04787B221E966B1200B3F7EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
