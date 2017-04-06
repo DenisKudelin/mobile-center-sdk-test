@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import MobileCenter
+import MobileCenterAnalytics
+import MobileCenterCrashes
+import MobileCenterDistribute
 
 class ViewController: UIViewController {
 
@@ -24,7 +28,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func testButtonTouchDown(_ sender: UIButton) {
-        
+        MSAnalytics.trackEvent("Test button clicked")
     }
 
 }
