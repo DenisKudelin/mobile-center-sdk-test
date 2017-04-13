@@ -7,4 +7,7 @@ target 'mobile-center-sdk-test' do
 
   # Pods for mobile-center-sdk-test
 
+  pod 'MobileCenter/MobileCenterAnalytics'
+  pod 'MobileCenter/MobileCenterCrashes'
+  pod 'MobileCenter/MobileCenterDistribute'
 end
